@@ -12,7 +12,13 @@ class CustomDrawer extends StatelessWidget {
     return Container(
       color: Colors.white,
       child: const Column(
-        children: [],
+        children: [
+          UserInfoListTile(
+            image: Assets.imagesAvatar3,
+            title: 'Lekan Okeowo',
+            subtitle: 'demo@gmail.com',
+          ),
+        ],
       ),
     );
   }
@@ -27,17 +33,21 @@ class UserInfoListTile extends StatelessWidget {
   final String image, title, subtitle;
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      leading: SvgPicture.asset(
-        image,
-      ),
-      title: Text(
-        title,
-        style: AppStyles.styleSemiBold16,
-      ),
-      subtitle: Text(
-        subtitle,
-        style: AppStyles.styleRegular12,
+    return Card(
+      elevation: 0,
+      color: const Color(0xFFFAFAFA),
+      child: ListTile(
+        leading: SvgPicture.asset(
+          image,
+        ),
+        title: Text(
+          title,
+          style: AppStyles.styleSemiBold16,
+        ),
+        subtitle: Text(
+          subtitle,
+          style: AppStyles.styleRegular12,
+        ),
       ),
     );
   }

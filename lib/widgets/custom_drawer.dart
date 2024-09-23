@@ -13,32 +13,43 @@ class CustomDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
-      child: const Column(
-        children: [
-          UserInfoListTile(
-            image: Assets.imagesAvatar3,
-            title: 'Lekan Okeowo',
-            subtitle: 'demo@gmail.com',
+      child: const CustomScrollView(
+        slivers: [
+          SliverToBoxAdapter(
+            child: UserInfoListTile(
+              image: Assets.imagesAvatar3,
+              title: 'Lekan Okeowo',
+              subtitle: 'demo@gmail.com',
+            ),
           ),
-          SizedBox(
-            height: 8,
+          SliverToBoxAdapter(
+            child: SizedBox(
+              height: 8,
+            ),
           ),
           DrawerItemsListView(),
-          Expanded(child: SizedBox()),
-          InActiveDrawerItem(
-            drawerItemModel: DrawerItemModel(
-              title: 'Setting system',
-              icon: Assets.imagesSettings,
+          SliverFillRemaining(
+            hasScrollBody: false,
+            child: Column(
+              children: [
+                Expanded(child: SizedBox()),
+                InActiveDrawerItem(
+                  drawerItemModel: DrawerItemModel(
+                    title: 'Setting system',
+                    icon: Assets.imagesSettings,
+                  ),
+                ),
+                InActiveDrawerItem(
+                  drawerItemModel: DrawerItemModel(
+                    title: 'Logout account',
+                    icon: Assets.imagesLogout,
+                  ),
+                ),
+                SizedBox(
+                  height: 48,
+                ),
+              ],
             ),
-          ),
-          InActiveDrawerItem(
-            drawerItemModel: DrawerItemModel(
-              title: 'Logout account',
-              icon: Assets.imagesLogout,
-            ),
-          ),
-          SizedBox(
-            height: 48,
           ),
         ],
       ),

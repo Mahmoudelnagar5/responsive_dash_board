@@ -21,6 +21,11 @@ class DashboardDesktopLayout extends StatelessWidget {
           child: CustomScrollView(
             physics: BouncingScrollPhysics(),
             slivers: [
+              SliverToBoxAdapter(
+                child: SizedBox(
+                  height: 40,
+                ),
+              ),
               SliverToBoxAdapter(child: AllExpenses()),
               SliverToBoxAdapter(
                 child: SizedBox(

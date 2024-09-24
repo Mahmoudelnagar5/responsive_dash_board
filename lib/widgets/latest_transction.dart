@@ -10,12 +10,9 @@ class LatestTransction extends StatelessWidget {
     return const Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Align(
-          alignment: Alignment.centerLeft,
-          child: Text(
-            'Latest Transction',
-            style: AppStyles.styleSemiBold16,
-          ),
+        Text(
+          'Latest Transction',
+          style: AppStyles.styleMedium16,
         ),
         SizedBox(
           height: 16,

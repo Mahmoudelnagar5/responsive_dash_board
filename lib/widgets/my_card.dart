@@ -13,7 +13,9 @@ class MyCard extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           image: const DecorationImage(
-              fit: BoxFit.fill, image: AssetImage(Assets.imagesCardBackground)),
+            fit: BoxFit.fill,
+            image: AssetImage(Assets.imagesCardBackground),
+          ),
           color: const Color(0xFF4EB7F2),
           borderRadius: BorderRadius.circular(12),
         ),

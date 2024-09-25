@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_single_quotes
 class Assets {
   Assets._();
-
+  
   /// Assets for imagesAvatar1
   /// assets/images/avatar_1.svg
   static const String imagesAvatar1 = "assets/images/avatar_1.svg";
@@ -9,6 +9,9 @@ class Assets {
   /// Assets for imagesAvatar2
   /// assets/images/avatar_2.svg
   static const String imagesAvatar2 = "assets/images/avatar_2.svg";
+
+  /// Assets for imagesAvatar3
+  /// assets/images/avatar_3.svg
   static const String imagesAvatar3 = "assets/images/avatar_3.svg";
 
   /// Assets for imagesBalance
@@ -16,9 +19,8 @@ class Assets {
   static const String imagesBalance = "assets/images/balance.svg";
 
   /// Assets for imagesCardBackground
-  /// assets/images/card_background.svg
-  static const String imagesCardBackground =
-      "assets/images/card_background.svg";
+  /// assets/images/card_background.png
+  static const String imagesCardBackground = "assets/images/card_background.png";
 
   /// Assets for imagesDashboard
   /// assets/images/dashboard.svg
@@ -27,6 +29,10 @@ class Assets {
   /// Assets for imagesExpenses
   /// assets/images/expenses.svg
   static const String imagesExpenses = "assets/images/expenses.svg";
+
+  /// Assets for imagesGallery
+  /// assets/images/gallery.svg
+  static const String imagesGallery = "assets/images/gallery.svg";
 
   /// Assets for imagesIncome
   /// assets/images/income.svg
@@ -56,3 +62,4 @@ class Assets {
   /// assets/images/wallet_account.svg
   static const String imagesWalletAccount = "assets/images/wallet_account.svg";
 }
+

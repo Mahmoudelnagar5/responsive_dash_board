@@ -12,7 +12,7 @@ class LatestTransction extends StatelessWidget {
       children: [
         Text(
           'Latest Transction',
-          style: AppStyles.styleMedium16,
+          style: AppStyles.styleMedium16(context),
         ),
         const SizedBox(
           height: 16,

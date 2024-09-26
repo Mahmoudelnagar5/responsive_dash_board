@@ -27,4 +27,36 @@ class ItemDetails extends StatelessWidget {
       ),
     );
   }
+  // return Padding(
+  //   padding: const EdgeInsets.only(left: 16),
+  //   child: FittedBox(
+  //     fit: BoxFit.scaleDown,
+  //     child: Row(
+  //       children: [
+  //         Container(
+  //           width: 12,
+  //           height: 12,
+  //           decoration: ShapeDecoration(
+  //             color: itemDetailsModel.color,
+  //             shape: const OvalBorder(),
+  //           ),
+  //         ),
+  //         const SizedBox(
+  //           width: 12,
+  //         ),
+  //         Text(
+  //           itemDetailsModel.title,
+  //           style: AppStyles.styleRegular16,
+  //         ),
+  //         const SizedBox(
+  //           width: 24,
+  //         ),
+  //         Text(
+  //           itemDetailsModel.value,
+  //           style: AppStyles.styleMedium16,
+  //         ),
+  //       ],
+  //     ),
+  //   ),
+  // );
 }

@@ -1,6 +1,5 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
+import 'package:responsive_dash_board/widgets/detailed_income_chart.dart';
 import 'package:responsive_dash_board/widgets/income_chart.dart';
 import 'package:responsive_dash_board/widgets/income_details.dart';
 
@@ -12,24 +11,21 @@ class IncomeSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.sizeOf(context).width;
-    // log(width.toString());
     return width >= SizeConfig.desktop && width < 1590
-        ? const SizedBox()
+        ? const Expanded(
+            child: DetailedIncomeChart(),
+          )
         : const Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Expanded(child: IncomeChart()),
-              Expanded(flex: 2, child: IncomeDetails()),
+              Expanded(
+                child: IncomeChart(),
+              ),
+              Expanded(
+                flex: 2,
+                child: IncomeDetails(),
+              ),
             ],
           );
-    return width >= 1750
-        ? const Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Expanded(child: IncomeChart()),
-              Expanded(flex: 2, child: IncomeDetails()),
-            ],
-          )
-        : const SizedBox();
   }
 }

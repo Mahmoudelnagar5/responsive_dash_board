@@ -8,21 +8,21 @@ class TransctionHistory extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        TransctionHistoryHeader(),
-        SizedBox(
+        const TransctionHistoryHeader(),
+        const SizedBox(
           height: 20,
         ),
         Text(
           '13 April 2022',
           style: AppStyles.styleMedium16,
         ),
-        SizedBox(
+        const SizedBox(
           height: 16,
         ),
-        TransctionHistoryListView(),
+        const TransctionHistoryListView(),
       ],
     );
   }

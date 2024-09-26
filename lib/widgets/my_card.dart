@@ -31,7 +31,7 @@ class MyCard extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
-              subtitle: const Text(
+              subtitle: Text(
                 'Syah Bandi',
                 style: AppStyles.styleMedium20,
               ),
